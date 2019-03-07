@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="picture/3.jpg"/>
+<title> My Angel ♥ </title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+			<audio autoplay="autopaly">
+					<source src="music/-Love Her- - R&B Love Piano-Guitar Instrumental Beat.mp3" type="audio/mp3">
+			</audio>
+        <div id="main">
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">~</span><br />
+			<span class="space"/><span class="comments">*7-3-2019</span><br />
+			<span class="space"/><span class="comments">~</span><br />
+			Boy name = <span class="keyword">Bi</span><br />
+			Girl name = Kim<span class="keyword"> Ngân</span><br />
+			Time = 00:30 <br />
+			<br />
+			<span class="space"/><span class="keyword">~*~ NHÂN NGÀY 8 - 3 TUI GỬI TẶNG MẤY NGƯỜI ~*~</span><br />
+			<span class="placeholder"/>Thay mặt Chủ Tịch Nước<br />
+			<span class="comments">♥ Thay mặt Hội đồng nhân dân Việt Nam</span><br />
+			<span class="placeholder"/>Tui xin chúc <span class="keyword">Kim Ngân</span> nhân dịp 8 tháng 3 này<br />
+			<span class="comments">♥ Càng lớn càng xinh ( Thua xa tui chắc )</span><br />
+			<span class="placeholder"/>Học càng lúc càng giỏi ( Nhất là Lý đó nghen :> )<br />
+			<span class="comments">♥ Càng lớn càng bớt điên ( Sự thật là điên thật :3 =)) )</span><br />
+			<span class="placeholder"/>Cao lên tí nữa đi nhé :) ( Biết tui thua xa rồi )<br />
+			<span class="comments">♥ Nhân dịp này anh cũng muốn thổ lộ tình cảm anh nhiều hơn</span><br />
+			<span class="placeholder"/>Khi mình quen nhau thì cũng có lúc 2 đứa lại im lặng<br />
+			<span class="placeholder"/>Nhưng không có nghĩa là không yêu em .<br />
+			<span class="placeholder">Chỉ là khi bên cạnh em anh không biết diễn tả cảm xúc như thế nào</span><br />
+			<span class="placeholder">Nhiều lúc lại làm em phải suy nghĩ lo lắng .. Anh thấy anh có lỗi</span><br />
+			<span class="placeholder">Khi em buồn khi em khóc anh không bên cạnh .. Anh thật sự xin lỗi</span><br />
+			<span class="placeholder">Cả đêm ngồi suy nghĩ chẳng biết phải làm thế nào để gắn kết tình cảm</span><br />
+			<span class="placeholder">Nên dịp này anh tặng em vài món quà để tỏ lòng cho em biết</span><br />
+			<span class="placeholder">Tuy không gì nhiều nhưng món quà anh tặng bằng tất cả tình cảm của anh</span><br />
+			<span class="placeholder">Anh chỉ mong em sẽ thích .</span><br />
+			<span class="comments">♥ Em nè . anh chỉ muốn em </span><span class="keyword">luôn cười và bên cạnh</span><span class="comments"> anh luôn làm động lực cho anh vượt qua mọi thứ .</span><br />
+			<br>
+			<span class="keyword">☘ HAPPY WOMEN'S DAY ☘</span><br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Anh với em quen biết được chừng này rồi đấy
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+				Yêu Em Cô Gái ♥ <br/>
+					<div class="signature">- Bi<div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="text-align:center;margin:0px 0; font:normal 12px/20px 'MicroSoft YaHei';">
+</div>
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2019,1,1);
+together.setHours(-01);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
